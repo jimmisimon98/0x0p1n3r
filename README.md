@@ -14,7 +14,7 @@
 <!-- Site Title -->
 		
 <h1 align="center"> 0x0p1n3r</h1>
-<h3 align="center">All in one sub-domain Enumeration Tool</h3>
+<h3 align="center">All in one sub-domain Enumeration and common vulnerability scanner</h3>
 
 <p align="center">
   <img align="center" width="400px" height="100px;" src="https://www.fullstackpython.com/img/logos/bash-wide.jpg" >  <br><br>
