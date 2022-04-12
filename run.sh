@@ -256,7 +256,7 @@ if [ ! -f $GOPATH/bin/assetfinder ]; then
    	fi
 	echo "checking js secrets"
 	cat $pwd/domain/$domain/$domain"_all_parameters.txt" | grep -iE '\.js'|grep -iEv '(\.jsp|\.json)' >> jsfiles.txt
-	cat $pwd/domain/$domain/$domain"_domain" | $GOPATH/bin/getJS --complete | grep "$domain" >> jsfiles.txt
+	cat $pwd/domain/$domain/$domain"_domain" | $GOPATH/bin/getJS --insecure --complete | grep "$domain" >> jsfiles.txt
 	sort -u jsfiles.txt >> $pwd/domain/$domain/$domain"_js_files"
 	rm jsfiles.txt
 	cd $pwd/tools/SecretFinder
