@@ -1,10 +1,8 @@
 sudo apt install git
 sudo apt install golang-go
-sudo apt install cargo
 sudo apt install python3-pip
 sudo apt install curl
 sudo apt install jq
-cargo install NtHiM
 pip install httpie
 pip3 install -r ./tools/requirements.txt
 go install github.com/hahwul/dalfox/v2@latest
