@@ -72,7 +72,7 @@
 
 # Demo 
 
-<img src="https://raw.githubusercontent.com/z3dc0ps/0x0p1n3r/main/tools/0x0p1n3r.PNG" >
+<img src="./tools/0x0p1n3r.png" >
 
 
 # Special Thanks
