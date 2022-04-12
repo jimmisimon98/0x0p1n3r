@@ -14,80 +14,68 @@
 <!-- Site Title -->
 		
 <h1 align="center"> 0x0p1n3r</h1>
-<h3 align="center">All in one Subdomain Enumeration Tool</h3>
+<h3 align="center">All in one sub-domain Enumeration Tool</h3>
 
 <p align="center">
-  <img align="center" width="200px" height="50px;" src="https://www.fullstackpython.com/img/logos/bash-wide.jpg" >  
-  <img align="center"  width="300px" height="50px;" src="https://assets-cdn.anaconda.com/assets/company/anaconda-logo.png"><br><br>
-  <img src="https://img.shields.io/badge/0x0p1n3r-v1.5-blue">
+  <img align="center" width="400px" height="100px;" src="https://www.fullstackpython.com/img/logos/bash-wide.jpg" >  <br><br>
+  <img src="https://img.shields.io/badge/0x0p1n3r-v1.6-blue">
   </p>
   
 <br>
-<h4>0x0p1n3r is set of combination of other tools and one line scripts to find subdomains easily and to check subdomain takeover </h4>
+<h4>0x0p1n3r is a set of combination of other tools and one line scripts to find sub-domains and check common vulnerabilities </h4>
 
-## Note :
+# Note :
    Read README.md before Installation 
    
-## Features
-    
-    Scripts:
-        amass
-        assetfinder
-        findomain
-        gau
-        knockpy
-        sublist3r
-        takeover
-        v1d0m
-    Domains:
-        api.hackertarget.com
-        crt.sh
-        dns.bufferover.run
-        riddler.io
-        securitytrails.com
-        sonar.omnisint.io
-        threatcrowd.org
-        web.archive.org
-	
-## Installation 
+# Features
+
+    Find subdomain
+	    scripts:
+		assetfinder
+		gau
+		knockpy
+		sublist3r
+	    domains:
+		api.hackertarget.com
+		crt.sh
+		dns.bufferover.run
+		riddler.io
+		securitytrails.com
+		sonar.omnisint.io
+		threatcrowd.org
+		web.archive.org
+		
+	collect IP Address
+	Subdomain Takeover 
+	Broken Link 
+	SSRF
+	SSTI
+	SQL
+	nuclei
+	dalfox
+
+# Installation 
 
 ```
-$ git clone https://github.com/z3dc0ps/0x0p1n3r 
-$ cd 0x0p1n3r
-$ sudo apt-get install dos2unix
-$ sudo dos2unix ./*
-$ sudo bash setup.sh
+> git clone https://github.com/z3dc0ps/0x0p1n3r 
 ```
-## Update
-
 ```
-$ bash run.sh -u
-$ cd ../0x0p1n3r ; dos2unix ./*
-$ bash setup.sh
+> cd 0x0p1n3r
 ```
-
-## Adding Virustotal API Key 
+```
+> sudo bash setup.sh
+```
+# Usage
+```
+> bash run.sh
 ```
 
-Go to https://www.virustotal.com/ and Login
-Go to API key which in Top Right Option Menu
-Copy API key and Paste in config.json
-
-```
-
-## Usage
-```
-$ bash run.sh
-```
-
-## Demo 
+# Demo 
 
 <img src="https://raw.githubusercontent.com/z3dc0ps/0x0p1n3r/main/tools/0x0p1n3r.PNG" >
 
-<a href="http://jimmisimon.in/projects/0x0p1n3r.mp4">Watch Video</a>
 
-
-## Special Thanks
+# Special Thanks
 
 
  [@Tom Hudson](https://github.com/tomnomnom) <br>
