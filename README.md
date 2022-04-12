@@ -67,7 +67,7 @@
 ```
 # Usage
 ```
-> bash run.sh
+> sudo bash run.sh
 ```
 
 # Demo 
