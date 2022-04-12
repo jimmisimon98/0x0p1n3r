@@ -11,6 +11,7 @@ go get -u github.com/tomnomnom/assetfinder
 go get -u github.com/tomnomnom/waybackurls
 go get -v github.com/tomnomnom/anew@latest
 go get -u github.com/tomnomnom/qsreplace
+go install github.com/003random/getJS@latest
 go install github.com/hakluke/hakrawler@latest
 go install github.com/hahwul/dalfox/v2@latest
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
