@@ -1,0 +1,4 @@
+while read line;
+do
+	SecretFinder.py -i '$line' -o cli
+done < js.txt
