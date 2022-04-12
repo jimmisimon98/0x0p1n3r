@@ -14,6 +14,6 @@ go get -u github.com/tomnomnom/qsreplace
 go install github.com/hahwul/dalfox/v2@latest
 go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
-chmod +x tools/*
+sudo chmod +x tools/*
 export GOPATH=$HOME/go
-mkdir domain
+sudo mkdir domain
