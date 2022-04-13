@@ -50,7 +50,7 @@ then
 				case $args in
 					d)domain=$OPTARG;;
 					b)burp=$OPTARG;;
-					x)proxy=$OPTARG;;
+					x)proxy="http://"$OPTARG;;
 				esac
 			done
 			
