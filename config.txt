@@ -1,0 +1,7 @@
+SHODAN_API_KEY=AcYMaKLmfKBAmi8aX647lilnblUsKi7J
+CENSYS_API_ID=d5a7773b-7a2d-4d47-98b1-1e89105fd4d2
+CENSYS_API_SECRET=vlitVR2jnzAaUwMIHMSFqiloGLvTtyS8
+FOFA_EMAIL=jimmisimon@karunya.edu.in
+FOFA_KEY=997e775efbf39c7c7e4cac8a1362e3cd
+proxy=
+burp=cbjhtcs2vtc00004ah1ggf3e7ewyyyyyb.interact.sh
