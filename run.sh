@@ -532,6 +532,7 @@ banner="
 
 	Options are:
 		  -d  domain (required)
+		  -l	domain list ( scope mode ) ( optional )
 		  
 	";
 
@@ -544,20 +545,41 @@ burp="http://$burp";
 
 
 
-while getopts ":d:" args;
+while getopts ":d:l:" args;
 do
 	case $args in
 		d)domain=$OPTARG;;
+		l)list=$OPTARG;;
 	esac
 done
 
-
-
-if [ "$domain" == "" ];
+if [[ "$list" == "" && "$domain" == "" ]];
 then
 	echo "$banner";
 	exit;
 fi
+
+if [[ "$list" != "" ]];
+then
+	if [ "$domain" != "" ];
+	then
+		if [ -f $list ];
+		then
+			printf "\n			${Blue}Entering to scope mode${NC}\n"
+			mkdir $pwd/domain/$domain
+			cp $list $pwd/domain/$domain/$domain"_domain"
+			cat $pwd/domain/$domain/$domain"_domain" | $GOPATH/bin/httprobe >> $pwd/domain/$domain/$domain
+			printf "\n ${Green}Result Saved in $pwd/domain/$domain/$domain ${NC}\n\n";
+		else
+			echo "No files found in this location"
+		fi
+	else
+		echo "$banner";
+		exit;
+	fi
+fi
+
+
 
 
 
