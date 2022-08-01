@@ -276,7 +276,7 @@ sourcecodescan(){
 	echo "checking source-code "
 	if [ ! -z $proxy ];
 	then
-		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx -proxy $proxy -silent -path /.git/ -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
+		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx -proxy $proxy -silent -path /.git/config -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
 		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx -proxy $proxy -silent -path /.svn/ -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
 		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx -proxy $proxy -silent -path /.hg/ -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
 		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx -proxy $proxy -silent -path /.bzr/ -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
@@ -285,14 +285,14 @@ sourcecodescan(){
 		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx -proxy $proxy -silent -path /storage/logs/laravel.log -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
 		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx -proxy $proxy -silent -path /wp-content/debug.log -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
 	else
-		cat $pwd/domain/$domain/$domain | $GOPATH/bin/httpx  -silent -path /.git/config -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
-		cat $pwd/domain/$domain/$domain | $GOPATH/bin/httpx  -silent -path /.svn/entries -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
-		cat $pwd/domain/$domain/$domain | $GOPATH/bin/httpx  -silent -path /.hg/hgrc -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
-		cat $pwd/domain/$domain/$domain | $GOPATH/bin/httpx  -silent -path /.bzr/branch/branch.conf -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
-		cat $pwd/domain/$domain/$domain | $GOPATH/bin/httpx  -silent -path /.env -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
-		cat $pwd/domain/$domain/$domain | $GOPATH/bin/httpx  -silent -path /application/configs/application.ini -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
-		cat $pwd/domain/$domain/$domain | $GOPATH/bin/httpx  -silent -path /storage/logs/laravel.log -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
-		cat $pwd/domain/$domain/$domain | $GOPATH/bin/httpx  -silent -path /wp-content/debug.log -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
+		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx  -silent -path /.git/config -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
+		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx  -silent -path /.svn/entries -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
+		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx  -silent -path /.hg/hgrc -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
+		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx  -silent -path /.bzr/branch/branch.conf -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
+		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx  -silent -path /.env -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
+		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx  -silent -path /application/configs/application.ini -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
+		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx  -silent -path /storage/logs/laravel.log -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
+		cat $pwd/domain/$domain/$domain"_all_dictionaries" | $GOPATH/bin/httpx  -silent -path /wp-content/debug.log -content-length -status-code  -ports 80,443,4443,8000,8008,8009,8080,8081,8090,8443,8888 -threads 100 -title | $GOPATH/bin/anew >> $pwd/domain/$domain/$domain"_source_code"
 	fi
 	sort -u $pwd/domain/$domain/$domain"_source_code" >> $pwd/domain/$domain/$domain"_source_code_details"
 	rm $pwd/domain/$domain/$domain"_source_code"
@@ -475,9 +475,9 @@ nucleiscan(){
 	if [ ! -z $burp ];
 	then
 
-		$GOPATH/bin/nuclei -c 100 -l $pwd/domain/$domain/$domain"_nuclie_final" -t "/root/.local/nuclei-templates" -silent -iserver $burp
+		$GOPATH/bin/nuclei -c 50 -l $pwd/domain/$domain/$domain"_nuclie_final" -t "/root/Desktop/cent/cent-nuclei-templates" -silent -iserver $burp -H '"'$usercookie'"'
 	else
-		$GOPATH/bin/nuclei -c 100 -l $pwd/domain/$domain/$domain"_nuclie_final" -t "/root/.local/nuclei-templates" -silent
+		$GOPATH/bin/nuclei -c 50 -l $pwd/domain/$domain/$domain"_nuclie_final" -t "/root/Desktop/cent/cent-nuclei-templates" -silent -H '"'$usercookie'"'
 	fi
 
 }
@@ -531,11 +531,11 @@ banner="
 	Usage: 0x0p1n3r.sh -d domain
 
 	Options are:
-		  -d  domain (required)
+		  -d	domain 	( required )
 		  -l	domain list ( scope mode ) ( optional )
-		  
+		 
 	";
-
+	
 
 
 #checkrequirements	
@@ -578,8 +578,6 @@ then
 		exit;
 	fi
 fi
-
-
 
 
 
