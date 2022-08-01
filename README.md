@@ -57,17 +57,17 @@
 # Installation 
 
 ```
-> git clone https://github.com/z3dc0ps/0x0p1n3r 
+$ git clone https://github.com/z3dc0ps/0x0p1n3r 
 ```
 ```
-> cd 0x0p1n3r
+$ cd 0x0p1n3r
 ```
 ```
-> sudo bash setup.sh
+$ sudo bash setup.sh
 ```
 # Usage
 ```
-> sudo bash run.sh
+$ sudo bash run.sh
 ```
 
 # Demo 
